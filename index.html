@@ -1,16 +1,421 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>TEST PROJECT</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Final Project: Stat Cards</title>
+    <meta name="description" content="Colorado Corvette Club Card Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-<h1>This is some stuff</h1>
-<p>More stuff</p>
-<p>More stuff</p>
-<ul>
-  <li>help</li>
-  <li>don't help</li>
+    <header>
+      <nav>
+        <img
+          src="images/CCC_Full-Logo_2020_ALT.svg"
+          alt="Colorado Corvette Club Logo"
+        />
+        <button>
+          <a href="https://www.coloradocorvetteclub.org/" target="_blank"
+            >Check out our website!</a
+          >
+        </button>
+      </nav>
+    </header>
+    <section class="instructions">
+      <h1>
+        Click a card once to find your favorite Corvette generation. <br />Click
+        a card twice to find out more about our club!
+      </h1>
+    </section>
+
+    <!--CARD SECTION - Front and back of cards-->
+    <main>
+      <div class="card-set" id="c1">
+        <img
+          class="card-back"
+          id="c1back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c1front"
+          src="images/C1-CUT.png"
+          alt="C1 Corvette Red and White"
+        />
+      </div>
+      <div class="card-set" id="c2">
+        <img
+          class="card-back"
+          id="c2back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c2front"
+          src="images/C2-CUT.png"
+          alt="C2 Corvette Silver"
+        />
+      </div>
+      <div class="card-set" id="c3">
+        <img
+          class="card-back"
+          id="c3back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c3front"
+          src="images/C3-CUT.png"
+          alt="C3 Corvette Aqua"
+        />
+      </div>
+      <div class="card-set" id="c4">
+        <img
+          class="card-back"
+          id="c4back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c4front"
+          src="images/C4-CUT.png"
+          alt="C4 Corvette White"
+        />
+      </div>
+      <div class="card-set" id="c5">
+        <img
+          class="card-back"
+          id="c5back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c5front"
+          src="images/C5-CUT.png"
+          alt="C5 Corvette Raceway White with Tan Top"
+        />
+      </div>
+      <div class="card-set" id="c6">
+        <img
+          class="card-back"
+          id="c6back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c6front"
+          src="images/C6-CUT.png"
+          alt="C6 Corvette Yellow"
+        />
+      </div>
+      <div class="card-set" id="c7">
+        <img
+          class="card-back"
+          id="c7back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c7front"
+          src="images/C7-CUT.png"
+          alt="C7 Corvette Orange"
+        />
+      </div>
+      <div class="card-set" id="c8">
+        <img
+          class="card-back"
+          id="c8back"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="c8front"
+          src="images/C8-CUT.png"
+          alt="C8 Corvette Blue"
+        />
+      </div>
+      <div class="card-set" id="mission">
+        <img
+          class="card-back"
+          id="mback"
+          src="images/card-back.png"
+          alt="Corvette Logo on Checkered Flag Background"
+        />
+        <img
+          class="card-front"
+          id="mfront"
+          src="images/card-mission.png"
+          alt="Colorado Corvette Club's Mission"
+        />
+      </div>
+    </main>
+
+    <!--POP UP STATS-->
+    <div class="pop-up-stats">
+      <div class="card-stats" id="c1-stats">
+        <img class="close" id="c1X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mike & Jackie M.</td>
+              <td>1959 Convertible</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c2-stats">
+        <img class="close" id="c2X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mike & Jackie M.</td>
+              <td>1967 Convertible</td>
+            </tr>
+            <tr>
+              <td>Andy W.</td>
+              <td>1966 Coupe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c3-stats">
+        <img class="close" id="c3X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Edward G.</td>
+              <td>1968 Convertible</td>
+            </tr>
+            <tr>
+              <td>Mike & Teresa K.</td>
+              <td>1969 Convertible</td>
+            </tr>
+            <tr>
+              <td>Mike & Jackie M.</td>
+              <td>1969 Convertible (x2)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c4-stats">
+        <img class="close" id="c4X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tony & Alacey B.</td>
+              <td>1995 Coupe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c5-stats">
+        <img class="close" id="c5X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tony & Alacey B.</td>
+              <td>2004 ZO6</td>
+            </tr>
+            <tr>
+              <td>Paul F.</td>
+              <td>2003 Convertible</td>
+            </tr>
+            <tr>
+              <td>Stan & Sandi K.</td>
+              <td>2003 ZO6 Coupe</td>
+            </tr>
+            <tr>
+              <td>Mike & Teresa K.</td>
+              <td>2001 Coupe</td>
+            </tr>
+            <tr>
+              <td>Glenn & Martha M.</td>
+              <td>1999 Coupe</td>
+            </tr>
+            <tr>
+              <td>Mike & Jackie M.</td>
+              <td>2000 Convertible</td>
+            </tr>
+            <tr>
+              <td>McMillin & Stockton</td>
+              <td>2003 Convertible</td>
+            </tr>
+            <tr>
+              <td>Gary & Penny S.</td>
+              <td>2000 Convertible</td>
+            </tr>
+            <tr>
+              <td>Josh & Audra S.</td>
+              <td>2001 Convertible</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c6-stats">
+        <img class="close" id="c6X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ken & Tian J.</td>
+              <td>2013 Coupe Grand Sport</td>
+            </tr>
+            <tr>
+              <td>David R.</td>
+              <td>2009 Coupe</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c7-stats">
+        <img class="close" id="c7X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Tony C.</td>
+              <td>2014 Coupe</td>
+            </tr>
+            <tr>
+              <td>Paul E.</td>
+              <td>2015 ZO6</td>
+            </tr>
+            <tr>
+              <td>Kay F.</td>
+              <td>2018 Grand Sport</td>
+            </tr>
+            <tr>
+              <td>Jeff G.</td>
+              <td>2019 ZR1</td>
+            </tr>
+            <tr>
+              <td>Jeff G.</td>
+              <td>2014 Coupe</td>
+            </tr>
+            <tr>
+              <td>Brodie & Sherron G.</td>
+              <td>2015 Coupe</td>
+            </tr>
+            <tr>
+              <td>Jay & Kathy H.</td>
+              <td>2016 ZO6 Coupe</td>
+            </tr>
+            <tr>
+              <td>Janet & Rhonda J.</td>
+              <td>2018 ZO6 Coupe</td>
+            </tr>
+            <tr>
+              <td>Tom & Diane J.</td>
+              <td>2015 Convertible</td>
+            </tr>
+            <tr>
+              <td>Deb L.</td>
+              <td>2015 ZO6</td>
+            </tr>
+            <tr>
+              <td>Mike & Jackie M.</td>
+              <td>2015 ZO6 Coupe</td>
+            </tr>
+            <tr>
+              <td>Brent & Lori W.</td>
+              <td>2019 Grand Sport</td>
+            </tr>
+            <tr>
+              <td>David & Anne W.</td>
+              <td>2019 Grand Sport</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="c8-stats">
+        <img class="close" id="c8X" src="images/X.png" alt="X" />
+        <table>
+          <thead>
+            <tr>
+              <th>Club Members</th>
+              <th>Model</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mike & Teresa K.</td>
+              <td>On Order</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card-stats" id="mission-text">
+        <img class="close" id="mX" src="images/X.png" alt="X" />
+        <p>
+          The mission of the Colorado Corvette Club is to further the Corvette
+          avocation while having fun, fellowship and respect for all people.
+          Whenever possible, we strive to be of service to our community by
+          lending support to organizations who help those who are less fortunate
+          and in need.
+        </p>
+      </div>
+    </div>
+    <footer>
+      <p class="foot">
+        Designed by AudraSDesigns for the Colorado Corvette Club. All rights
+        reserved.
+      </p>
+    </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
